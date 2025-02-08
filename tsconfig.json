@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    // "module": "CommonJS",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "outDir": "./dist",
+    "strict": true,
+    "esModuleInterop": true,
+  },
+  "include": ["src/**/*", "src/renderer/shims-vue.d.ts", "src/global.d.ts"]
+}
