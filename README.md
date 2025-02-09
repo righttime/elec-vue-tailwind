@@ -72,6 +72,40 @@
 - Tailwind CSS 클래스를 사용하여 컴포넌트 스타일링
 - `src/renderer/styles/index.css`에서 전역 스타일 정의 가능
 
+#### 미리 정의된 커스텀 클래스
+
+1. 컴포넌트 클래스
+   - `.btn`, `.btn-primary`, `.btn-secondary`: 버튼 스타일
+   - `.card`: 카드 컴포넌트 스타일
+   - `.input`: 입력 필드 스타일
+
+2. 유틸리티 클래스
+   - `.text-shadow`: 텍스트 그림자 효과
+   - `.gradient-bg`: 그라데이션 배경
+
+#### 사용 예시
+```vue
+<template>
+  <div class="card">
+    <h1>제목</h1>
+    <input type="text" class="input" placeholder="입력하세요" />
+    <div class="flex gap-4 mt-4">
+      <button class="btn-primary">확인</button>
+      <button class="btn-secondary">취소</button>
+    </div>
+  </div>
+</template>
+```
+
+#### 커스텀 테마
+
+`tailwind.config.js`에서 다음과 같은 커스텀 값들이 정의되어 있습니다:
+
+- 커스텀 색상: `primary`, `secondary` 색상군
+- 커스텀 폰트 크기: `xs-tight`, `sm-tight`
+- 커스텀 간격: `spacing-18`, `spacing-72`
+- 커스텀 테두리 반경: `rounded-xl`, `rounded-2xl`
+
 ### 새 컴포넌트 추가
 
 1. `src/renderer/components` 디렉토리에 새 컴포넌트 파일 생성
